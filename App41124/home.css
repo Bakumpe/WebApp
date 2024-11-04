@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fullpage-background{
+    background-image: url("images/interstella.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    margin: 0;
+    padding: 50px;
+    color: rgb(249, 246, 246);
+    text-align: center;
+}
+header h1:focus-within{
+    background-color: rgb(0, 0, 0);
+}
+header h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+header h3{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+}
+nav{
+    position: fixed;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    font-size:xx-large;
+    font-weight: bold;   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: brown;
+    border-radius: 25px;
+}
+main{
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.search{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    background: rgb(206, 221, 217);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.search:hover input{
+    width: 500px;
+}
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight:500;
+    transition: 0.5s;
+    background: transparent;
+}
+.search a .fas{
+    color: rgb(21, 23, 23);
+    font-size: 18px;
+}
+.text{
+    margin: 0;
+    padding: 10px;
+   color: white;
+}
+.search a img{
+    padding: 0;
+    margin: 0;
+    width:40px;
+    height:40px;
+}
+br{
+    border-color: white;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.social{
+    display: inline-block;
+    margin: 0 50px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social img:hover{
+    transform: scale(2.5);
+    width: 200px;
+    padding-bottom: 40px;
+}
+
+@media(max-width: 600px){
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .fullpage-background{
+        background-image: url("images/interstella.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+    header{
+        margin: 0;
+        padding: 30px;
+        color: rgb(15, 14, 14);
+        text-align: center;
+    }
+    header h1{
+        margin: 0;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    header h3{
+        margin: 0;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    nav{
+        position: fixed;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline;
+        font-size: large;
+        font-weight: bold;   
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
+        background-color: brown;
+        border-radius: 15%;
+        text-align: left;
+    }
+    main{
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        height: 30px;
+        display: flex;
+        cursor: pointer;
+        gap: 4rem;
+        padding: 10px 20px;
+        background: rgb(220, 231, 228);
+        border-radius: 30px;
+        align-items: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    .search input{
+        width: auto;
+        outline: none;
+        border: none;
+        font-weight:500;
+        transition: 0.8s;
+        background: transparent;
+    }
+    .search a .fas{ 
+        font-size: 18px;
+    }
+    .footer{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    }
+    .social{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .social img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social img:hover{
+        transform: scale(0.5);
+        width: 5px;
+        padding-bottom: 1px;
+    }
+}
